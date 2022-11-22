@@ -19,6 +19,14 @@
     --clr-accent: #2EF0C5;
 }
 
+@media (min-width: 600px) {
+    :root {
+        --fs-h1: 4.5em;
+        --fs-body: 1.2em;
+    }
+}
+
+
 html {
     margin: 0;
     padding: 0;
@@ -31,10 +39,11 @@ body {
 }
 
 .container {
-    margin: 6.5em auto;
+    margin: 6.5em auto 0;
     padding: .5em;
     position: relative;
     z-index: 100;
+    max-height: 100vh;
 }
 
 h1 {
@@ -65,6 +74,10 @@ button {
     line-height: 1.5em;
 }
 
+.hero_subtitle span {
+    display: block;
+}
+
 .avatar_one,
 .avatar_four,
 .avatar_five { display: none }
@@ -86,29 +99,84 @@ button {
 .avatar_six {
     position: absolute;
     right: 1em;
-    bottom: 4.5em;
+    bottom: -2.5em;
     scale: 1.2;
 }
 
-@media (min-width: 700px) {
-    .avatar_one,
-    .avatar_four,
-    .avatar_five { display: block }
-
-    
-}
-
-footer {
+.twitter {
+    position: absolute;
+    margin-top: 12em;
     font-family: var(--ff-secondary);
     font-weight: var(--fw-body);
     font-size: var(--fs-body);
     display: flex;
     align-items: center;
-    position: absolute;
-    bottom: .5em;
-    left: .5em;
+    z-index: 100;
 }
 
 .twitter_icon {
     padding-right: .8em;
+}
+
+@media (min-width: 600px) {
+    .container {
+        padding: 2em;
+    }
+
+    .hero_title { margin-bottom: .4em }
+
+    .hero_subtitle { margin-bottom: 1.5em }
+
+    .avatar_one,
+    .avatar_four,
+    .avatar_five { display: block }
+
+    .avatar_one {
+        position: absolute;
+        scale: .8;
+        top: 13em;
+        right: 1em;
+    }
+
+    .avatar_two {
+        top: .5em;
+        right: 1em;
+    }
+
+    .avatar_three { top: 3em }
+
+    .avatar_four {
+        position: absolute;
+        scale: .7;
+        right: 2em;
+        bottom: -13em;
+    }
+
+    .avatar_five {
+        position: absolute;
+        scale: .8;
+        top: 10em;
+        right: 9.5em;
+    }
+
+    .avatar_six {
+        scale: .8;
+        bottom: 5em;
+        right: 4.5em;
+    }
+
+
+    .twitter {
+        margin-top: 6em;
+        font-family: var(--ff-secondary);
+        font-weight: var(--fw-body);
+        font-size: var(--fs-body);
+        display: flex;
+        align-items: center;
+        z-index: 100;
+    }
+
+    .twitter_icon {
+        padding-right: .8em;
+    }
 }
