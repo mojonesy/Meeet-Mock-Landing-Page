@@ -19,10 +19,16 @@
     --clr-accent: #2EF0C5;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 540px) {
     :root {
         --fs-h1: 4.5em;
         --fs-body: 1.2em;
+    }
+}
+
+@media (min-width: 1024px) {
+    :root {
+        --fs-h1: 7.5em;
     }
 }
 
@@ -99,7 +105,7 @@ button {
 .avatar_six {
     position: absolute;
     right: 1em;
-    bottom: -2.5em;
+    bottom: 4em;
     scale: 1.2;
 }
 
@@ -118,7 +124,7 @@ button {
     padding-right: .8em;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 540px) {
     .container {
         padding: 2em;
     }
@@ -149,7 +155,7 @@ button {
         position: absolute;
         scale: .7;
         right: 2em;
-        bottom: -13em;
+        bottom: -7em;
     }
 
     .avatar_five {
@@ -161,7 +167,7 @@ button {
 
     .avatar_six {
         scale: .8;
-        bottom: 5em;
+        bottom: 11.5em;
         right: 4.5em;
     }
 
@@ -178,5 +184,44 @@ button {
 
     .twitter_icon {
         padding-right: .8em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .logo {
+        padding: 1em 6em;
+    }
+
+    .container {
+        padding: .5em 6em;
+        margin: 0 auto;
+    }
+
+    .hero_title {
+        margin: 0 auto;
+    }
+
+    .twitter { margin-top: 2em }
+
+    .avatar_one { top: 18em }
+
+    .avatar_two { 
+        right: 5em;
+        scale: .8;
+    }
+
+    .avatar_four { 
+        bottom: .2em;
+        scale: .8;
+    }
+
+    .avatar_five {
+        top: 3em;
+        right: 16em;
+    }
+
+    .avatar_six {
+        bottom: 14.5em;
+        right: 20em;
     }
 }
