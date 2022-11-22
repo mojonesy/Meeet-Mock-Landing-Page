@@ -7,14 +7,53 @@
 :root {
     --ff-primary: 'Sen', sans-serif;
     --ff-secondary: 'Inter', sans-serif;
+
+    --fw-h1: 700;
+    --fw-body: 400;
+
+    --fs-h1: 2.5em;
+    --fs-body: 1em;
+
+    --clr-light: #A2B7C5;
+    --clr-dark: #013142;
+    --clr-accent: #2EF0C5;
 }
 
-html, body {
+html {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
 }
 
+body {
+    padding: .5em;
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+}
+
 h1 {
     font-family: var(--ff-primary);
+    font-weight: var(--fw-h1);
+    font-size: var(--fs-h1);
+    color: var(--clr-accent);
+}
+
+p { 
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-body);
+    font-size: var(--fs-body);
+}
+
+button {
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-body);
+    background-color: #2EF0C5;
+    color: #000;
+    border: none;
+}
+
+footer {
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-body);
+    font-size: var(--fs-body);
 }
