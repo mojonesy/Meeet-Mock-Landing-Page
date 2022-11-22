@@ -31,6 +31,10 @@ body {
     color: var(--clr-light);
 }
 
+.container {
+    z-index: 10;
+}
+
 h1 {
     font-family: var(--ff-primary);
     font-weight: var(--fw-h1);
@@ -50,10 +54,20 @@ button {
     background-color: #2EF0C5;
     color: #000;
     border: none;
+    border-radius: 5px;
+    padding: 1em;
 }
 
 footer {
     font-family: var(--ff-secondary);
     font-weight: var(--fw-body);
     font-size: var(--fs-body);
+    display: flex;
+    position: absolute;
+    bottom: .5em;
+    left: .5em;
+}
+
+.twitter_icon {
+    padding-right: .8em;
 }
