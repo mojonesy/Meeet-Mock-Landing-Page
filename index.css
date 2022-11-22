@@ -26,13 +26,15 @@ html {
 }
 
 body {
-    padding: .5em;
     background-color: var(--clr-dark);
     color: var(--clr-light);
 }
 
 .container {
-    z-index: 10;
+    margin: 6.5em auto;
+    padding: .5em;
+    position: relative;
+    z-index: 100;
 }
 
 h1 {
@@ -58,14 +60,42 @@ button {
     padding: 1em;
 }
 
+/* Hero */
+.hero_subtitle {
+    line-height: 1.5em;
+}
+
 .avatar_one,
 .avatar_four,
 .avatar_five { display: none }
 
-@media (min-width: 768px) {
+.avatar_two {
+    position: absolute;
+    right: 0;
+    top: 3.5em;
+    scale: .85;
+}
+
+.avatar_three {
+    position: absolute;
+    left: 1em;
+    top: 4.5em;
+    scale: .8;
+}
+
+.avatar_six {
+    position: absolute;
+    right: 1em;
+    bottom: 4.5em;
+    scale: 1.2;
+}
+
+@media (min-width: 700px) {
     .avatar_one,
     .avatar_four,
     .avatar_five { display: block }
+
+    
 }
 
 footer {
@@ -73,6 +103,7 @@ footer {
     font-weight: var(--fw-body);
     font-size: var(--fs-body);
     display: flex;
+    align-items: center;
     position: absolute;
     bottom: .5em;
     left: .5em;
