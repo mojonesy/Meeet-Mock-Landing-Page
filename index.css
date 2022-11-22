@@ -58,6 +58,16 @@ button {
     padding: 1em;
 }
 
+.avatar_one,
+.avatar_four,
+.avatar_five { display: none }
+
+@media (min-width: 768px) {
+    .avatar_one,
+    .avatar_four,
+    .avatar_five { display: block }
+}
+
 footer {
     font-family: var(--ff-secondary);
     font-weight: var(--fw-body);
